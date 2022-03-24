@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Code Pad</title>
+
+		<script type="text/javascript" src="jquery.min.js"></script>
+
+		<style type="text/css">
+			body {
+				font-family: sans-serif;
+				padding: 0;
+				margin: 0;
+			}
+
+			#top-bar {
+				width: 100%;
+				background-color: #EEEEEE;
+				padding: 5px;
+				height: 30px;
+
+
+			}
+
+			#logo {
+				float: left;
+				font-weight: bold;
+				font-size: 120%;
+				padding: 3px 5px;
+			}
+
+			#button-container {
+				width: 235px;
+				margin: 0 auto;
+			}
+
+			.toggle-button {
+				float: left;
+				border: 1px solid grey;
+				padding: 6px;
+				border-right: none;
+				font-size: 90%;
+			}
+
+			#html {
+				border-top-left-radius: 4px;
+				border-bottom-left-radius: 4px;
+			}
+
+
+			#output {
+				border-top-right-radius: 4px;
+				border-bottom-right-radius: 4px;
+				border-right: 1px solid grey;
+			}
+
+			.active {
+				background-color: #F5F9FE;
+			}
+
+			.hightlighted-button {
+				background-color: grey;
+
+			}
+
+			textarea {
+				width: 50%;
+				resize: none;
+				border-top: none;
+				border-bottom: none;
+				padding-left: 5px;
+			}	
+
+			.panel {
+				float: left;
+				width: 50%;
+				border-left: none;
+			}	
+
+			iframe {
+				border: none;
+
+			}
+
+			.hidden {
+				display: none;
+			}	
+
+
+		</style>
+
+
+	</head>
+	<body>
+
+		<div id="top-bar">
+			<div id="logo">
+				CodePlayer
+			</div>
+
+			<div id="button-container">
+				<div class="toggle-button active" id="html">HTML</div>
+
+				<div class="toggle-button" id="css">CSS</div>
+
+				<div class="toggle-button" id="javascript">JavaScript</div>
+
+				<div class="toggle-button active" id="output">Output</div>
+			</div>
+		</div>
+
+		<div id="body-container">
+			<textarea id="html-panel" class="panel"><p id="para">hello</p></textarea>
+
+			<textarea id="css-panel" class="panel hidden">p{color:pink}</textarea>
+			<textarea id="javascript-panel" class="panel hidden">document.getElementById('para').innerHTML = 'Yang'</textarea>
+
+			<iframe id="output-panel" class="panel"></iframe>
+
+		</div>
+
+
+		<script type="text/javascript">
+
+			function updateOutput() {
+				$('iframe').contents().find('html').html('<html><head><style type="text/css">'+$('#css-panel').val()+'</style></head><body>'+$('#html-panel').val()+'</body></html>');
+
+
+				document.getElementById('output-panel').contentWindow.eval($('#javascript-panel').val());
+
+			};
+
+
+
+			$('.toggle-button').hover(function() {
+				$(this).addClass('hightlighted-button');
+			}, function() {
+				$(this).removeClass('hightlighted-button');
+			}) ;
+
+
+
+			$('.toggle-button').click(function() {
+
+			$(this).toggleClass('active');
+			$(this).removeClass('hightlighted-button');
+			var panel_id = $(this).attr('id') +'-panel';
+
+			$('#'+panel_id).toggleClass('hidden');
+
+			var num_of_panel = 4 - $('.hidden').length
+
+			$('.panel').width(($(window).width()/num_of_panel)-10);
+
+
+
+			});
+
+			$('.panel').height($(window).height() - $('#top-bar').height()-10);
+
+			$('.panel').width(($(window).width()/2)-10);
+
+
+			updateOutput();
+
+			$('textarea').on('change keyup paste', function() {
+
+				updateOutput()
+			});
+
+		
+
+			
+
+		</script>
+
+	</body>
+</html>
