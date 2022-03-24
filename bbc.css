@@ -1,0 +1,275 @@
+			#top-bar {
+				width: auto;
+				margin:0 100px 0 100px;
+				height: 40px;
+			}
+
+			body {
+				margin: 0;
+				padding: 0;
+				font-family: Helvetica, freesans, sans-serif;
+
+			}
+
+			#logo {
+				margin: 0 6px 0 6px;
+				width: 100px;
+				height: 40px;
+				float: left;
+
+			}
+
+			.top-bar-section {
+				float: left;
+				border-left: 1px #CCCCCC solid;
+				height: 100%;
+			}
+
+			#signin-image {
+				width: 25px;
+				margin: 11px 15px;
+				float: left;
+			}
+
+			#signin-text {
+				font-weight: bold;
+				font-size: 90%;
+				position: relative;
+				top: 14px;
+				padding-right: 70px;
+			}
+
+			.top-bar-menu {
+				font-weight: bold;
+				font-size: 90%;
+				padding: 13px 15px 0 15px;
+				height: 27px;
+
+			}
+
+			#top-bar-more {
+				width: 6px;
+				height: 4px;
+				margin-left:35px ;
+
+			}
+
+			#search-input {
+				font-weight: bold;
+				font-size: 14px;
+				padding: 5px;
+				background-color: #E4E4E4;
+				border: none;
+				float: left;
+				margin: 8px 0 15px 8px;
+			}
+
+			#glass {
+				height: 26px;
+				margin-top: 8px;
+
+
+			}
+
+			.clear {
+				clear: both;
+			}
+
+			#menu-bar-container {
+				background-color: #B90100;
+				width:100% ;
+				height: 70px;
+				border-top: 1px solid #CCCCCC;
+			}
+
+			#menu-bar {
+				width: auto;
+				margin: 0 auto;				
+			}
+
+			h1 {
+				padding-left: 108px;
+				margin: 0;
+				color:#FFFFFF;
+				font-size: 40px;
+				font-weight: normal;
+				padding-top: 10px;
+			}
+
+
+
+			#menu-bar-2-container {
+				background-color: #A91717;
+				width: 100%;
+			}
+
+			#menu-bar-2 {
+				width: auto;
+				margin-left: 100px;
+				height: 40px;
+			}
+
+			#menu-bar-2 a {
+				color: white;
+				text-decoration: none;
+				margin-top: 10px;
+				padding: 0 10px ;
+				border-right: 1px solid #BB4545;
+				font-size: 14px;
+				position: relative;
+				top: 11px;
+			}
+
+			#menu-bar-2 a:hover {
+				text-decoration: underline;
+			}
+
+			#menu-bar-2 img {
+				width: 8px;
+				height: 8px;
+			}
+
+			.no-border {
+				border: none !important;
+			}
+
+			#page-container {
+				width: auto;
+				height: 0 auto;
+				margin-left: 108px;
+
+
+			}
+
+			#article-container {
+				float: left;
+				width: 500px;
+				margin-right: 30px;	
+
+			}
+
+			#main-article-image {
+				width: 500px;
+				height: 300px;	
+			}
+
+			h2 {
+				font-weight: normal;
+				margin-top: 40px;
+				font-size: 20px;
+				border-bottom: 3px solid #B90100;
+				width: 105px;
+			}
+
+			h3 a {
+				color: black;
+				font-size: 25px;
+				text-decoration: none;
+				margin-left: -2px;
+
+			}
+
+			h3 {
+				width: 500px;
+			}
+
+			h3 a:hover {
+				text-decoration: underline;
+				color: #1380A1;
+			}
+
+			#article-summary {
+				color: #5F5F5F;
+				width: 500px;
+
+				
+			}
+
+			#article-summary img {
+				height: 15px;
+				position: relative;
+				top: 2px;
+
+			}
+
+			#topic-link {
+				color: black;
+				text-decoration: none;
+				border-left: 1px solid #CCCCCC;
+				padding-left: 6px;
+
+			}
+
+			#article-summary a:hover {
+				text-decoration: underline;
+				color: #1380A1;
+			}
+
+
+			#date {padding-right: 2px;}
+
+			.article-link {
+				text-decoration: none;
+				color: black;
+			}
+
+			#preview-section {
+				width: 700px;
+				height: auto;
+				float: right;
+				position: relative;
+				left: -120px;
+				padding: 0;
+				margin: 0;
+
+				
+
+
+			}
+
+			#preview-section-top {
+				width: 700px;
+				float: top;
+				height: auto;
+
+			}
+
+			#preview-section img {
+				width: 220px;
+				height: 130px;
+				position: relative;
+				float: top;
+				margin:0;
+				padding: 0;
+			}
+
+			h4 {width: 180px;
+				padding: 0;
+				margin: 2px;}
+
+			#preview-section a {
+				font-size: 15px;
+				margin: 0;
+				color: #5A5A5A;
+				text-decoration: none;
+				
+			}
+
+			#preview-section a:hover {
+				text-decoration: underline;
+				color: #1380A1;
+
+			}
+
+			.preview-section-blocks {
+				float: left;
+				width: 220px;
+				padding: 0;
+				margin-right: 10px;
+				
+			}
+
+			#preview-section p {
+				color: #5A5A5A;
+				font-size: 15px;
+			}
