@@ -1,7 +1,7 @@
 # web-development-code
 
 <h4>This part of code mainly comes from the course&project from Udemy - <em>The Complete Web Developer Course 2.0</em></h4>
-<h5><em> All codes are for personal project and practise purpose only</em></h5>
+<h5><em><ins> All codes are for personal project and practise purpose only</ins></em></h5>
 
 1. Earth project: introduction web about Earth, text from online <br>
 2. BBC Website: clone a simlpe version of initital page of BBC news <br>
